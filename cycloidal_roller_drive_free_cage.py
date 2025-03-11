@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.widgets import Slider, Button
 import numpy as np
+import os
 
-# __file__.rsplit("/", 1)[0] +
-OUT_FILE = "wdirfc_output.dxf"
+OUT_FILE = os.path.join(os.path.dirname(__file__), "wrdfc_output.dxf")
 
 # ------------------------------------------------------------------------
 # Initial values
