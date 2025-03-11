@@ -15,4 +15,4 @@ YouTube: https://youtube.com/MishinMachine
 Instagram: https://instagram.com/mishinmachine
 
 
-Shoutout to @Tomato1107 for [his original](https://github.com/Tomato1107/Cycloidal-Drive-Animation) cycloidal-drive animation scripts.
+Shoutout to [@Tomato1107](https://github.com/Tomato1107) for [his original](https://github.com/Tomato1107/Cycloidal-Drive-Animation) cycloidal-drive animation scripts.
