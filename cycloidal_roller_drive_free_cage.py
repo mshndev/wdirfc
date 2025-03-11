@@ -196,7 +196,7 @@ def update_slider_limits ():
         e_slider.set_val(max_e)
         e_val = max_e
 
-    n_max = np.ceil((np.pi * D_val) / (d_val))
+    n_max = np.ceil((np.pi * (D_val - e_val * 2)) / (d_val))
     n_slider.valmax = n_max
     n_slider.ax.set_xlim(n_slider.valmin, n_slider.valmax)
     if n_slider.val > n_max:
@@ -307,13 +307,6 @@ e_ax = plt.axes([0.2, 0.20, slider_width, slider_height])
 n_ax = plt.axes([0.2, 0.15, slider_width, slider_height])
 isd_ax = plt.axes([0.2, 0.10, slider_width, slider_height])
 ced_ax = plt.axes([0.2, 0.05, slider_width, slider_height])
-
-# D_ax = plt.axes([0.2, 0.0, slider_width, slider_height])
-# d_ax = plt.axes([0.2, 0.0, slider_width, slider_height])
-# e_ax = plt.axes([0.2, 0.0, slider_width, slider_height])
-# n_ax = plt.axes([0.2, 0.0, slider_width, slider_height])
-# isd_ax = plt.axes([0.2, 0.0, slider_width, slider_height])
-# ced_ax = plt.axes([0.2, 0.0, slider_width, slider_height])
 
 D_slider = Slider(D_ax, 'Pins base: D', 10, 200.0, valinit=INITIAL_D, valstep=0.5)
 d_slider = Slider(d_ax, 'Pin dia: d',       1, 20,  valinit=INITIAL_d, valstep=0.5)
