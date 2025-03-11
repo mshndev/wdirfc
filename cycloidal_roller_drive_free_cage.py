@@ -15,7 +15,7 @@ from matplotlib.widgets import Slider, Button
 import numpy as np
 import os
 
-OUT_FILE = os.path.join(os.path.dirname(__file__), "wrdfc_output.dxf")
+OUT_FILE = os.path.join(os.path.dirname(__file__), "wrdfc_output.dxf") 
 
 # ------------------------------------------------------------------------
 # Initial values
@@ -358,7 +358,8 @@ def export(_):
 
     status_text.set_text("Saving... ")
 
-    doc = ezdxf.new("R2000")
+    doc = ezdxf.new("R2018")
+    doc.units = ezdxf.units.MM
     msp = doc.modelspace()
 
     # Separator circle
